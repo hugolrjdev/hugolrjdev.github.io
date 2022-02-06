@@ -1,0 +1,16 @@
+{
+  "name": "curriculo",
+  "version": "1.0.0",
+  "description": "Curriculo Hugo Lélio",
+  "main": "scripts.js",
+  "scripts": {
+    "sass": "sass --watch assets/sass/style.scss:assets/css/style.css --style compressed",
+    "sass:build": "npm run sass"
+  },
+  "keywords": [],
+  "author": "Hugo Lélio",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.49.7"
+  }
+}

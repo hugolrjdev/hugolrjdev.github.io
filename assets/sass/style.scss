@@ -1,0 +1,128 @@
+
+$popings:'Poppins', sans-serif;
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    font-family: $popings;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 700;
+    color: #35A6DE;
+
+}
+
+
+
+main {
+    background-color:#35A6DE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px 15px 20px 10px;
+    margin: 20px 0px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    small{
+        color:#35A6DE;
+        font-family: $popings;
+        font-size: 20px;
+        font-weight: 900;
+        padding: 0 20px;
+    }
+    p, ul{
+        font-size: 14px;
+        font-family: $popings;
+        color:#333;
+        padding: 0 10px 0 50px;
+    }
+    ul {
+        list-style: none;
+        i{
+            font: normal normal normal 12px/1 'iconmonstr-iconic-font' !important;
+        }
+    }
+}
+
+.dir{margin-left: 50px ;}
+.esq{margin-right: 50px ;}
+
+#welcome {
+    width: 370px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    
+    img{
+        width: 120px;
+        height: 120px;
+    }
+    p{
+        color:#111;
+        font-family: $popings;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    span{
+        color:#35A6DE;
+        font-family: $popings;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    strong{
+        color:#FF2E2E;
+        font-family: $popings;
+        font-size: 18px;
+        font-weight: 900;
+    }
+}
+
+#goals, #trajectory, #skills, #academic-education, #hobbies, #experiences, #projects, #contact {
+    width: 370px;
+}
+
+
+#skills {
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        img{
+            height: 60px;
+        }
+    }
+}
+
+#experiences{
+    display: flex;
+    flex-direction: column-reverse;
+    ul{
+        margin: 15px 0;
+    }
+
+}
+
+
+.hiddenBl{
+    opacity: 0;
+    transition: 1s;
+}
+
+.showBl{
+    opacity: 1;
+    transition: 1s;
+}
